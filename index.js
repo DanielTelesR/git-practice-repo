@@ -1,8 +1,5 @@
-let person;
+const prompt = require("prompt-sync")();
 
-function printName() {
-  person = "Daniel";
-  console.log(`My name is ${person}`);
-}
+const person = prompt("Enter your name: ");
 
-printName();
+console.log("Hi, ", person);

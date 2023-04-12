@@ -81,9 +81,23 @@ while (i >= 1) {
 console.log("Countdown finished!");
 */
 
+/*
 var year = 2018;
 
 while (year <= 2022) {
   console.log(year);
   year++;
 }
+*/
+
+// A cool way to output things on the browser's console:
+
+/*
+var cubes = "ABCDEFG";
+//styling console output using CSS with a %c format specifier
+for (var i = 0; i < cubes.length; i++) {
+  var styles =
+    "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+  console.log("%c" + cubes[i], styles);
+}
+*/

@@ -101,3 +101,19 @@ for (var i = 0; i < cubes.length; i++) {
   console.log("%c" + cubes[i], styles);
 }
 */
+
+for (let i = 1; i <= 10; i++) {
+  switch (i) {
+    case 1:
+      console.log("Gold medal.");
+      break;
+    case 2:
+      console.log("Silver medal");
+      break;
+    case 3:
+      console.log("Bronze medal");
+      break;
+    default:
+      console.log(i);
+  }
+}

@@ -1,15 +1,42 @@
-const prompt = require("prompt-sync")();
+/*
+var age = 10;
 
-function finalResult() {
-  const grade = prompt("Please enter your grade: ");
-
-  if (grade >= 60 && grade < 100) {
-    console.log("Congragulations! You passed the exam.");
-  } else if (grade == 100) {
-    console.log("Wow! You've obtained one of the bests grades! 100!");
-  } else {
-    console.log("Oh no, you did not pass the exam.");
-  }
+if (age >= 65) {
+  console.log("You get your income from your pension.");
+} else if (age < 65 && age == 18) {
+  console.log("Each month you get a salary.");
+} else if (age < 18) {
+  console.log("You get an allowance.");
+} else {
+  console.log("The value of the age variable is not numerical.");
 }
+*/
 
-finalResult();
+var day = "Friday";
+
+switch (day) {
+  case "Monday":
+    console.log("Go to school.");
+    break;
+  case "Tuesday":
+    console.log("Do your homework.");
+    break;
+  case "Wednesday":
+    console.log("Go to the gym.");
+    break;
+
+  case "Thursday":
+    console.log("Do something.");
+    break;
+  case "Friday":
+    console.log("Go out with some friends.");
+    break;
+  case "Saturday":
+    console.log("Go to the church");
+    break;
+  case "Sunday":
+    console.log("Get ready! A new week has started.");
+    break;
+  default:
+    console.log("The is no such day");
+}

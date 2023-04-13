@@ -120,6 +120,7 @@ for (let i = 1; i <= 10; i++) {
 }
 */
 
+/*
 function letterFinder(word, match) {
   for (let i = 0; i < word.length; i++) {
     if (word[i] == match) {
@@ -131,3 +132,20 @@ function letterFinder(word, match) {
 }
 
 letterFinder("test", "t");
+*/
+
+// Creating objects using the dot notation
+
+/*
+let car = {};
+
+car.color = "silver";
+car.doors = 4;
+car.priceUSD = 10000;
+car.owner = "Daniel";
+car.previousOwner = "Unknown";
+
+car.doors = 2;
+
+console.table(car);
+*/

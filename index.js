@@ -102,6 +102,7 @@ for (var i = 0; i < cubes.length; i++) {
 }
 */
 
+/*
 for (let i = 1; i <= 10; i++) {
   switch (i) {
     case 1:
@@ -117,3 +118,4 @@ for (let i = 1; i <= 10; i++) {
       console.log(i);
   }
 }
+*/

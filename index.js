@@ -149,3 +149,20 @@ car.doors = 2;
 
 console.table(car);
 */
+
+// Object Literals and the Brackets Notation
+/* 
+There's one really useful thing that bracket notation has
+but is not available in the dot notation: It can evaluate expressions. For example:
+*/
+
+var arrOfKeys = ["speed", "altitude", "color"];
+var drone = {
+  speed: 100,
+  altitude: 200,
+  color: "red",
+};
+
+for (let i = 0; i < arrOfKeys.length; i++) {
+  console.log(drone[arrOfKeys[i]]);
+}

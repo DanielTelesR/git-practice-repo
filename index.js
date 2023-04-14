@@ -201,6 +201,7 @@ console.log(roundedUpwards);
 
 // Exercise - Crating arrays and objects
 
+/*
 let clothes = [];
 clothes.push("t-shirt");
 clothes.push("pants");
@@ -217,3 +218,4 @@ favCar.color = "black";
 favCar.covertible = true;
 
 console.log(favCar);
+*/

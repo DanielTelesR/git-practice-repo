@@ -198,3 +198,22 @@ let roundedUpwards = Math.ceil(randomNumber * 10);
 
 console.log(roundedUpwards);
 */
+
+// Exercise - Crating arrays and objects
+
+let clothes = [];
+clothes.push("t-shirt");
+clothes.push("pants");
+clothes.push("underwear");
+clothes.push("skirt");
+clothes.push("bra");
+
+clothes.pop();
+clothes.push("Nike T-shirt");
+console.log(clothes[2]);
+
+let favCar = {};
+favCar.color = "black";
+favCar.covertible = true;
+
+console.log(favCar);

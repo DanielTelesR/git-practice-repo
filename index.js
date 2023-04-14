@@ -219,3 +219,21 @@ favCar.covertible = true;
 
 console.log(favCar);
 */
+
+// Object Methods
+/*
+If the function is a property of an object, it is then referred to as a method.
+/*
+All the key-value pairs in an object are referred to simply as properties. However, if I want to differentiate between the properties that can be executed, then I refer to such properties as methods. For example:
+*/
+
+let car = {};
+
+car["color"] = "red";
+car["turntheKey"] = function () {
+  console.log("The engine is running!");
+};
+car.mileage = 98765;
+
+console.log(car);
+car.turntheKey(); // I executed the method.

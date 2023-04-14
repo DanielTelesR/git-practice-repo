@@ -171,6 +171,7 @@ for (let i = 0; i < arrOfKeys.length; i++) {
 
 // Arrays are Objects - Practicing
 
+/*
 function arrayBuilder(one, two, three) {
   let arr = [];
   arr.push(one);
@@ -182,3 +183,18 @@ function arrayBuilder(one, two, three) {
 var cars = arrayBuilder("Ferrari", "BMW", "Chevrolet");
 
 console.table(cars);
+*/
+
+// Math Object
+
+/*
+let number = Math.pow(2, 3);
+console.log(number);
+*/
+
+/*
+let randomNumber = Math.random();
+let roundedUpwards = Math.ceil(randomNumber * 10);
+
+console.log(roundedUpwards);
+*/

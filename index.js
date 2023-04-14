@@ -168,3 +168,17 @@ for (let i = 0; i < arrOfKeys.length; i++) {
   console.log(drone[arrOfKeys[i]]);
 }
 */
+
+// Arrays are Objects - Practicing
+
+function arrayBuilder(one, two, three) {
+  let arr = [];
+  arr.push(one);
+  arr.push(two);
+  arr.push(three);
+  return arr;
+}
+
+var cars = arrayBuilder("Ferrari", "BMW", "Chevrolet");
+
+console.table(cars);

@@ -239,3 +239,29 @@ car.mileage = 98765;
 console.log(car);
 car.turntheKey(); // I executed the method.
 */
+
+// Error Handling
+// Try and Catch
+
+// Example 1:
+/*
+try {
+  console.log(a + b);
+} catch (err) {
+  console.log(err);
+  console.log("There was an error");
+  console.log("The error was saved in the error log");
+}
+console.log("My program does not stop");
+*/
+
+// Example 2:
+/*
+try {
+  throw new ReferenceError();
+} catch (err) {
+  console.log(err);
+  console.log("There was an Reference Error");
+}
+console.log("My program does not stop");
+*/

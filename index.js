@@ -265,3 +265,10 @@ try {
 }
 console.log("My program does not stop");
 */
+
+// Undefined, null and empty values
+
+console.log(noise2); // Output: Uncaught ReferenceError: noise2 is not defined
+
+var word;
+console.log(word); // Output: undefined

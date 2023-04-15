@@ -276,7 +276,7 @@ console.log(word); // Output: undefined
 */
 
 // Exercise - Error prevention
-
+/*
 function addTwoNums(a, b) {
   try {
     if (typeof a !== "number") {
@@ -292,3 +292,46 @@ function addTwoNums(a, b) {
 }
 addTwoNums(5, "5");
 console.log("It still works");
+*/
+
+// Exercise: Defensive Programming
+/*
+function letterFinder(word, match) {
+  let condition1 = typeof word == "string" && word.length >= 2;
+  let condition2 = typeof match == "string" && match.length == 1;
+  if (condition1 == true && condition2 == true) {
+    for (i = 0; i < word.length; i++) {
+      if (word[i] == match) {
+        //if the current character at position i in the word is equal to the match
+        console.log("Found the", match, "at", i);
+      } else {
+        console.log("---No match found at", i);
+      }
+    }
+  } else {
+    console.log("Please pass correct arguments to the function.");
+  }
+}
+letterFinder("cat", "c");
+*/
+
+// Practicing - Return values from functions
+/*
+let car = {}; // I created an empty object
+car.color = "black"; // Added properties to it
+car.doors = 2;
+car["engine"] = "V-power";
+
+function doubleIt(num) {
+  return num * 2;
+}
+
+function addProp(obj, prop, val) {
+  // Function that adds a new property to the object
+  obj[prop] = val;
+  return obj;
+}
+
+addProp(car, "mileage", doubleIt(22500));
+console.table(car);
+*/

@@ -335,3 +335,16 @@ function addProp(obj, prop, val) {
 addProp(car, "mileage", doubleIt(22500));
 console.table(car);
 */
+
+let brazil = {};
+brazil.player1 = "Kaká";
+brazil.player2 = "Ronaldo";
+brazil.player3 = "Ronaldinho";
+
+function addPlayer(obj, player, name) {
+  obj[player] = name;
+  return obj;
+}
+
+addPlayer(brazil, "player4", "Neymar");
+console.log(brazil);

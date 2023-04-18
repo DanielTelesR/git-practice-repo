@@ -413,3 +413,70 @@ function styleAndCelebrate() {
 
 styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
 */
+
+// Introduction to object-oriented programming
+
+/*
+var purchase1 = {
+  shoes: 100,
+  stateTax: 1.2,
+  totalPrice: function () {
+    // totalPrice is a method
+    var calculation = purchase1.shoes * purchase1.stateTax;
+    console.log("Total price:", calculation);
+  },
+};
+
+purchase1.totalPrice();
+
+var purchase2 = {
+  shoes: 50,
+  stateTax: 1.2,
+  totalPrice: function () {
+    // totalPrice is a method
+    var calculation = purchase2.shoes * purchase2.stateTax;
+    console.log("Total price: ", calculation);
+  },
+};
+*/
+
+// Now, using the "this" keyword:
+
+/*
+var purchase1 = {
+  shoes: 100,
+  stateTax: 1.2,
+  totalPrice: function () {
+    // In this context, this = this object
+    var calculation = this.shoes * this.stateTax;
+    console.log("Total price: ", calculation);
+  },
+};
+
+purchase1.totalPrice();
+*/
+
+/*Using the "this" keyword allows me to not really care about the current object's name, which is an improvement to the previous code I had. I can now refer to the object itself without specifying the object's name.
+ */
+
+// The 'this' keyword is an alias for the name of the object.
+
+// With the OOP (object-oriented programming) approach, I can code more efficiently by reusing existing code.
+
+// *** Classes: ***
+
+// They are essentially a blueprint(model) that you can repeatdly use to build new objects of a certain kind, as many times as you like.
+
+// Example:
+
+class Car {
+  // Using capital letters.
+
+  constructor(color, speed) {
+    this.color = color;
+    this.speed = speed;
+  }
+  turboOn() {
+    console.log("turbo is on!");
+  }
+}

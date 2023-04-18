@@ -350,3 +350,20 @@ function addPlayer(obj, player, name) {
 addPlayer(brazil, "player4", "Neymar");
 console.log(brazil);
 */
+
+// Function calling and recursion
+/*
+Recursion is an alternative way to run repetitive code without the use of loops.
+*/
+
+// Example:
+/*
+let counter = 3;
+function example() {
+  console.log(counter);
+  counter = counter - 1;
+  if (counter === 0) return;
+  example();
+}
+example();
+*/

@@ -470,13 +470,19 @@ purchase1.totalPrice();
 // Example:
 
 class Car {
-  // Using capital letters.
+  // Starting  with a capital letter.
 
   constructor(color, speed) {
+    /*Constructor function: accepts as many parameters as needed; the role of the constructor function is to assign the passed in parameters to the future objects properties. It is the constructor function that is used when instantiating new objects, instances of a given class.
+     */
     this.color = color;
     this.speed = speed;
   }
   turboOn() {
+    // There's no need to use the'function' keyword here, just the name of the method is needed.
     console.log("turbo is on!");
   }
 }
+
+const car1 = new Car("red", 120);
+car1.turboOn();

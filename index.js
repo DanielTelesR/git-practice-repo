@@ -490,12 +490,40 @@ purchase1.totalPrice();
 
 // To setup inheritance relation between classes in JS, we can use the 'extends' keyword, as in 'class B extends A'.
 
+/*
 class Animal {
-  /* ... class code here... */
+  ...
 }
 class Bird extends Animal {
-  /* ...class code here...*/
+  ...
 }
 class Eagle extends Bird {
-  /* ...class code here...*/
+  ...
 }
+*/
+
+// Always keep in mind: The upper class is also known as 'super class'.
+
+// OOP Principles: Polymorphism
+class Car {
+  useWorn() {
+    console.log("Beep, Beep!");
+  }
+}
+class Ferrari extends Car {
+  useWorn() {
+    super.useWorn();
+    console.log("Just a casual ferrari!");
+  }
+}
+class volkswagemGol extends Car {
+  useWorn() {
+    console.log("Brazilian gol! Beep, Beep!");
+  }
+}
+
+var ferrari = new Ferrari();
+var gol = new volkswagemGol();
+
+ferrari.useWorn();
+gol.useWorn();

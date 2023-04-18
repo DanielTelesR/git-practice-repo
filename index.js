@@ -467,22 +467,35 @@ purchase1.totalPrice();
 
 // They are essentially a blueprint(model) that you can repeatdly use to build new objects of a certain kind, as many times as you like.
 
-// Example:
+// // Example:
 
-class Car {
-  // Starting  with a capital letter.
+// class Car {
+//   // Starting  with a capital letter.
 
-  constructor(color, speed) {
-    /*Constructor function: accepts as many parameters as needed; the role of the constructor function is to assign the passed in parameters to the future objects properties. It is the constructor function that is used when instantiating new objects, instances of a given class.
-     */
-    this.color = color;
-    this.speed = speed;
-  }
-  turboOn() {
-    // There's no need to use the'function' keyword here, just the name of the method is needed.
-    console.log("turbo is on!");
-  }
+//   constructor(color, speed) {
+//     /*Constructor function: accepts as many parameters as needed; the role of the constructor function is to assign the passed in parameters to the future objects properties. It is the constructor function that is used when instantiating new objects, instances of a given class.
+//      */
+
+//     this.color = color;
+//     this.speed = speed;
+//   }
+//   turboOn() {
+//     // There's no need to use the'function' keyword here, just the name of the method is needed.
+//     console.log("turbo is on!");
+//   }
+// }
+
+// const car1 = new Car("red", 120);
+// car1.turboOn();
+
+// To setup inheritance relation between classes in JS, we can use the 'extends' keyword, as in 'class B extends A'.
+
+class Animal {
+  /* ... class code here... */
 }
-
-const car1 = new Car("red", 120);
-car1.turboOn();
+class Bird extends Animal {
+  /* ...class code here...*/
+}
+class Eagle extends Bird {
+  /* ...class code here...*/
+}

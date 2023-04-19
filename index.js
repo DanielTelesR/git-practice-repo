@@ -505,6 +505,8 @@ class Eagle extends Bird {
 // Always keep in mind: The upper class is also known as 'super class'.
 
 // OOP Principles: Polymorphism
+
+/*
 class Car {
   useWorn() {
     console.log("Beep, Beep!");
@@ -527,3 +529,25 @@ var gol = new volkswagemGol();
 
 ferrari.useWorn();
 gol.useWorn();
+
+*/
+
+// *** Constructors ***
+
+/*
+ Important: If you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.
+*/
+
+// When building objects of the following built-in types, we can use the constructor(the list below is inconclusive):
+
+// To use a constructor function, we must prepend it with the operator 'new'.
+
+/*
+new Date();
+new Error();
+new Map();
+new Promise();
+new Set();
+new WeakSet();
+new WeakMap();
+*/

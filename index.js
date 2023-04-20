@@ -817,3 +817,15 @@ function manager() {
 console.log(intern());
 console.log(manager());
 */
+
+// De-structuring arrays and objects
+
+/*
+In JavaScript, it's possible to extract the properties from objects into distinct variables using destructuring.
+*/
+
+// Example:
+/*
+let { PI } = Math;
+console.log(PI);
+*/

@@ -897,7 +897,7 @@ console.log(`${1 + 1 + 1 + 1} stars!`);
 */
 
 // Exercise: Array and object iteration
-
+/*
 // Task 1
 var dairy = [
   "cheese",
@@ -945,3 +945,29 @@ function animalCan() {
 }
 
 animalCan();
+*/
+
+// *** Data Structures ***
+
+// A solution to a coding task depends on the data structure you use.
+
+// Object: an unordered, non-iterable collection of key-value pairs. You use it when you need to store and later access a value under a key.
+
+// Array: an ordered, iterable collection of values. You use it when you need to store and later acces a value under an index.
+
+// Map: it's like an array, because it's iterable. However, it consists of key value pairs. Don't confuse a map with an object! With maps, any value can be used as a key. With objects, keys can only be strings or symbols.
+
+// Set: it's another collection where each item in the collection must be unique.
+
+// For example, the following code will simply not be run. In other words, no errors will be thrown and no updates will be made to a set:
+/*
+const house1 = "red";
+const house2 = "blue";
+const house3 = "red";
+
+const houses = new Set();
+
+houses.add(house1).add(house2).add(house3);
+
+console.log(houses);
+*/

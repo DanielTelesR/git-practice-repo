@@ -857,6 +857,7 @@ for (key of Object.keys(clothingItem)) {
 
 // *** For in x For of  and objects ***
 
+/*
 const car = {
   engine: true,
   steering: true,
@@ -878,3 +879,69 @@ for (prop of Object.keys(sportsCar)) {
   console.log(prop + ":" + sportsCar[prop]);
 }
 console.log("🎯", "Iterating over object's own PROPERTIES only!");
+*/
+
+// *** Template literals ***
+// Backsticks(``)
+/*
+Template literals are an alternative way of working with strings, which was introduced in the ES6 addition to the JavaScript language.
+
+Up until ES6, the only way to build strings in JavaScript was to delimit them in either single quotes or double quotes.
+*/
+
+// Besides variable interpolation, template strings can span multiple lines.
+
+// It's possible to perform arithmetic operation inside a template literal:
+/*
+console.log(`${1 + 1 + 1 + 1} stars!`);
+*/
+
+// Exercise: Array and object iteration
+
+// Task 1
+var dairy = [
+  "cheese",
+  "sour cream",
+  "milk",
+  "yogurt",
+  "ice cream",
+  "milkshake",
+];
+
+function logDairy() {
+  for (item of dairy) {
+    console.log(item);
+  }
+}
+
+logDairy();
+
+// Task 2
+
+const animal = {
+  canJump: true,
+};
+
+const bird = Object.create(animal);
+
+bird.canFly = true;
+
+bird.hasFeathers = true;
+
+function birdCan() {
+  for (prop of Object.keys(bird)) {
+    console.log(`${prop}: ${bird[prop]}`);
+  }
+}
+
+birdCan();
+
+// Task 3
+
+function animalCan() {
+  for (prop in bird) {
+    console.log(`${prop}: ${bird[prop]}`);
+  }
+}
+
+animalCan();

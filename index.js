@@ -841,6 +841,7 @@ console.log(PI);
 // But how can we loop over an object?
 // Example:
 
+/*
 var clothingItem = {
   price: 50,
   color: "beige",
@@ -851,5 +852,29 @@ var clothingItem = {
 for (key of Object.keys(clothingItem)) {
   console.log(key, ":", clothingItem[key]); // clothingItem[key] was used to access the corresponding value of each key.
 }
-
+*/
 // Remember: An object itself is not iterable!
+
+// *** For in x For of  and objects ***
+
+const car = {
+  engine: true,
+  steering: true,
+  speed: "slow",
+};
+
+const sportsCar = Object.create(car);
+sportsCar.speed = "fast";
+console.log("The sportsCar object: ", sportsCar);
+
+console.log("---- for-in is unreliable ----");
+for (prop in sportsCar) {
+  console.log(prop);
+}
+console.log("🤔", "Iterating over object AND its prototype!");
+
+console.log("---- for-of is reliable ----");
+for (prop of Object.keys(sportsCar)) {
+  console.log(prop + ":" + sportsCar[prop]);
+}
+console.log("🎯", "Iterating over object's own PROPERTIES only!");

@@ -829,3 +829,27 @@ In JavaScript, it's possible to extract the properties from objects into distinc
 let { PI } = Math;
 console.log(PI);
 */
+
+//  *** For of loops and objets ***
+
+// Three important built-in methods: Object.keys(), Object.values(), and Object.entries().
+
+// Object.keys --> returns an array of strings, where each string is a property key of the the properties contained in the passed object.
+
+// Object.entries() --> returns an array listing both the keys and the values. This time, the values that get returned are 2-member arrays nested inside an array. In other words, you get an array of arrays, where each item has two members, the first being a property's key, and the second being a property's value.
+
+// But how can we loop over an object?
+// Example:
+
+var clothingItem = {
+  price: 50,
+  color: "beige",
+  material: "cotton",
+  season: "autumn",
+};
+
+for (key of Object.keys(clothingItem)) {
+  console.log(key, ":", clothingItem[key]); // clothingItem[key] was used to access the corresponding value of each key.
+}
+
+// Remember: An object itself it's not iterable!

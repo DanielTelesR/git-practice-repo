@@ -771,6 +771,7 @@ cuddles.makeSound(true); // purr, Roar!
 
 // Graded Assessment: Building an object-oriented program:
 
+/*
 // Task 1: Code a Person class
 
 class Person {
@@ -815,3 +816,4 @@ function manager() {
 
 console.log(intern());
 console.log(manager());
+*/

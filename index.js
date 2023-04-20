@@ -852,4 +852,4 @@ for (key of Object.keys(clothingItem)) {
   console.log(key, ":", clothingItem[key]); // clothingItem[key] was used to access the corresponding value of each key.
 }
 
-// Remember: An object itself it's not iterable!
+// Remember: An object itself is not iterable!

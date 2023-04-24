@@ -1016,3 +1016,33 @@ console.log(dividedBy10);
 /*
 This method is used to map each array item over to another array's item, based on whatever work is performed inside the function that is passed-in to the map as a parameter.
 */
+
+// The example below covers how to use the object data structure to complete a specific task.
+
+// This task is to convert an object to an array:
+/*
+const result = [];
+const drone = {
+  speed: 100,
+  color: "yellow",
+};
+
+const droneKeys = Object.keys(drone);
+droneKeys.forEach((key) => {
+  result.push(key, drone[key]); // drone[key] returns the value
+});
+
+console.log(result);
+*/
+
+// Working with Maps in JavaScript:
+
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+console.log(bestBoxers);
+
+// To geet a specific value, you need to use the get() method:
+
+console.log(bestBoxers.get(1));

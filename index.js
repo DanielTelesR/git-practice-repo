@@ -971,3 +971,24 @@ houses.add(house1).add(house2).add(house3);
 
 console.log(houses);
 */
+
+// *** Data Structure Examples ***
+
+// Three specific methods that exist on arrays: 1. forEach 2. filter 3. map
+
+// forEach
+/*
+const fruits = ["kiwi", "mango", "apple", "pear"];
+function appendIndex(fruit, index) {
+  console.log(`${index}. ${fruit}`);
+}
+fruits.forEach(appendIndex);
+*/
+
+// Very often, the function that the forEach() method needs to use is passed in directly into the method call, like this:
+/*
+const veggies = ["onion", "garlic", "potato"];
+veggies.forEach((veggie, index) => {
+  console.log(`${index}. ${veggie}`);
+});
+*/

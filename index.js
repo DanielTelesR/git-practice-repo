@@ -992,3 +992,13 @@ veggies.forEach((veggie, index) => {
   console.log(`${index}. ${veggie}`);
 });
 */
+
+// The filter() method
+
+const nums = [0, 10, 20, 30, 40, 50];
+var greaterThan20 = nums.filter((num) => {
+  return num > 20;
+});
+console.log(greaterThan20);
+
+// Similar to the forEach() method, the filter() method also accepts a function and that function performs some work on each of the items in the array.

@@ -995,10 +995,24 @@ veggies.forEach((veggie, index) => {
 
 // The filter() method
 
+/*
 const nums = [0, 10, 20, 30, 40, 50];
 var greaterThan20 = nums.filter((num) => {
   return num > 20;
 });
 console.log(greaterThan20);
+*/
 
 // Similar to the forEach() method, the filter() method also accepts a function and that function performs some work on each of the items in the array.
+
+// The map() method
+/*
+var dividedBy10 = [0, 10, 20, 30, 40, 50].map((num) => {
+  return num / 10;
+});
+console.log(dividedBy10);
+*/
+
+/*
+This method is used to map each array item over to another array's item, based on whatever work is performed inside the function that is passed-in to the map as a parameter.
+*/

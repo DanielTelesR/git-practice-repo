@@ -1227,8 +1227,25 @@ The DOM is an in-memory representation of the active HTML document. Any changes 
 
 // Manipulating the DOM:
 
-const h2 = document.createElement("h2");
+/*
+const h2 = document.createElement("h2"); // Remember to use single-quotes
 h2.innerText = "This is an h2 heading";
 h2.setAttribute("id", "sub-heading");
 h2.setAttribute("class", "secondary");
 document.body.appendChild(h2);
+*/
+
+// *** JavaScript Selectors ***
+
+// DOM: The framework a browser uses to reand and store a webpage.
+
+// Examples of JS DOM selectors:
+
+// 1. querySelector() 2. querySelectorAll() 3. getElementById() 4. getElementsByClassName()
+
+/*
+document.querySelector
+document.querySelectorAll
+document.getElementById
+document.getElementsByClassName
+*/

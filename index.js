@@ -1210,3 +1210,25 @@ const greeting = () => {
 
 export default greeting;
 */
+
+// *** JavaScript DOM manipulation ***
+
+/*
+DOM tree structure: HTML file is mapped out like a tree structure with nested objects for different parts of the page.
+*/
+
+/*
+The DOM is the model of the HTML file saved as a JavaScript object in your browser's memory. A browser builds a DOM, or model, for every webpage it downloads as a JavaScript object.
+ */
+
+/*
+The DOM is an in-memory representation of the active HTML document. Any changes made are local and do not affect the document stored on the webserver.
+*/
+
+// Manipulating the DOM:
+
+const h2 = document.createElement("h2");
+h2.innerText = "This is an h2 heading";
+h2.setAttribute("id", "sub-heading");
+h2.setAttribute("class", "secondary");
+document.body.appendChild(h2);

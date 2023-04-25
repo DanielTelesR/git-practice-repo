@@ -1249,3 +1249,15 @@ document.querySelectorAll
 document.getElementById
 document.getElementsByClassName
 */
+
+// *** Event Handling ***
+
+// Example 1:
+
+const target = document.querySelector("body");
+
+function handleClick() {
+  console.log("Clicked the body");
+}
+
+target.addEventListener("click", handleClick);

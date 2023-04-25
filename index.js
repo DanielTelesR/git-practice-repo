@@ -1333,3 +1333,7 @@ JSON.stringify(data)
 /*
 When working with JSON it is common to convert it back to a JavaScript object to work with its properties. To do this you need to use the global built-in JSON object and its parse method.
 */
+
+/*
+JSON.stringify will turn the object into a string representation. The property name is wrapped in double quotes in the representation.
+*/

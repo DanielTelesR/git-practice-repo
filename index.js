@@ -1352,3 +1352,23 @@ npm i webpack
 npm i bootstrap-vue
 npm i @angular/core
 */
+
+// *** What is testing? ***
+
+// JavaScript testing frameworks
+
+// Example: JEST framework
+
+function concatStrings(str1, str2) {
+  return str1 + str2;
+}
+
+expect(concatStrings("abc", "def")).toBe("abcdef");
+
+// When tests fail, you say that they're red, and when they pass you say that they're green.
+
+// Refactoring: updating code, without affecting the results it produces.
+
+/*
+Reg-green-refactor cycle: As you continue to refine your code in response to red tests, it becomes a cyclical activity. This is often described as the red-green-refactor cycle. This cycle is the basis of the test-driven development or TDD approach to programming.
+*/

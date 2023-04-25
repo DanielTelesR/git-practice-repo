@@ -1337,3 +1337,18 @@ When working with JSON it is common to convert it back to a JavaScript object to
 /*
 JSON.stringify will turn the object into a string representation. The property name is wrapped in double quotes in the representation.
 */
+
+// Other JavaScript environments - node & NPM
+
+// Node.js is a separate, standalone environment without ties to the JavaScript in the browser.
+
+// Node.js comes with a package manager called NPM.
+
+// Examples of libraries you can install inclue React, Webpack, Bootstrap, and Angular Core:
+
+/*
+npm i react
+npm i webpack
+npm i bootstrap-vue
+npm i @angular/core
+*/

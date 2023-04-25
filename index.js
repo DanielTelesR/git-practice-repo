@@ -1302,9 +1302,34 @@ function handleClicks() {
       break;
     default:
       h1.innerText = arr[0];
-      break;
   }
 }
 
 h1.addEventListener("click", handleClicks);
+*/
+
+// *** JavaScript Object Notation - JSON ***
+
+/*
+'{"greeting":"hello"}'
+
+const jsonStr = '{"greeting":"hello"}';
+const aPlainObj = JSON.parse(jsonStr);
+aPlainObj.greeting = 'hi';
+*/
+
+/*
+const data = {
+  firstName: "John",
+  lastName: "Doe",
+  greeting: "Hello"
+}
+
+JSON.stringify(data)
+*/
+
+// Atention: JSON strings cannot hold functions!
+
+/*
+When working with JSON it is common to convert it back to a JavaScript object to work with its properties. To do this you need to use the global built-in JSON object and its parse method.
 */

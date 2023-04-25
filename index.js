@@ -1184,3 +1184,29 @@ const fruits2 = [...fruits];
 fruits1.pop();
 console.log(fruits1, "not", fruits2);
 */
+
+// *** JavaScript Modules ***
+
+// To use an ES6 module in a browser, the script's type attribute must be set to "module" (in a HTML file, for example).
+
+// Modules were added to JavaScript in version ES6.
+
+// Modules allow for code to be reused and more easily replaced.
+
+// Example (in the greeting.js file):
+
+/*
+export const informalGreeting = (person) => {
+  console.log('Hello, ' + person);
+}
+
+export const formalGreeting = (person) => {
+  console.log(`Good day, ${person}`);
+}
+
+const greeting = () => {
+  console.log('Howdy!');
+}
+
+export default greeting;
+*/

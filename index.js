@@ -1049,7 +1049,27 @@ console.log(bestBoxers);
 // console.log(bestBoxers.get(1));
 
 // Working with Sets in JavaScript
-
+/*
 const repetitiveFruits = ["apple", "pear", "apple", "pear", "plum", "apple"];
 const uniqueFruits = new Set(repetitiveFruits);
 console.log(uniqueFruits);
+*/
+
+// *** Spread operator ***
+
+let top3 = ["The Colosseum", "Trevi Fountain", "The Vatican City"];
+
+function showItinerary(place1, place2, place3) {
+  console.log("Visit " + place1);
+  console.log("Then visit " + place2);
+  console.log("Finish with a visit to " + place3);
+}
+
+showItinerary(top3[0], top3[1], top3[2]);
+
+// Or...
+
+showItinerary(...top3);
+
+/*The spread operartor includes all of the array elements with much less code. It allows you to pass all array elements into a function without having to type them all individually.
+ */

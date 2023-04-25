@@ -1057,6 +1057,7 @@ console.log(uniqueFruits);
 
 // *** Spread operator ***
 
+/*
 let top3 = ["The Colosseum", "Trevi Fountain", "The Vatican City"];
 
 function showItinerary(place1, place2, place3) {
@@ -1066,10 +1067,57 @@ function showItinerary(place1, place2, place3) {
 }
 
 showItinerary(top3[0], top3[1], top3[2]);
+*/
 
 // Or...
 
-showItinerary(...top3);
+// showItinerary(...top3);
 
 /*The spread operartor includes all of the array elements with much less code. It allows you to pass all array elements into a function without having to type them all individually.
  */
+
+// It's used to "unpack a box".
+
+// *** Rest operator ***
+
+// The rest operator, in the other hand, "is used to build a smaller box and pack items into it".
+
+/*
+const top7 = [
+  "The Colosseum",
+  "The Roman Forum",
+  "The Vatican",
+  "Trevi Fountain",
+  "The Pantheon",
+  "Piazza Venezia",
+  "The Palatine Hill",
+];
+*/
+
+// Destructuring...
+
+/*
+const [] = top7;
+const [first, second, third, ...secondVisit] = top7;
+
+console.log(secondVisit);
+*/
+
+// Thus, the rest operator allows you to take items from an array and use them to create a separate sub-array.
+
+// It's also useful in functions:
+
+/*
+function addTaxToPrices(taxRate, ...itemsBought) {
+  // the rest operator must be the last parameter in the function definition!
+  return itemsBought.map((item) => taxRate * item);
+}
+
+let shoppingCart = addTaxToPrices(1.1, 46, 89, 35, 79);
+
+console.log(shoppingCart);
+*/
+
+/*
+The rest operator groups the remaining parameters in a list within a standard JavaScript array.
+*/

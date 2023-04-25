@@ -1252,8 +1252,9 @@ document.getElementsByClassName
 
 // *** Event Handling ***
 
-// Example 1:
+// Example:
 
+/*
 const target = document.querySelector("body");
 
 function handleClick() {
@@ -1261,3 +1262,22 @@ function handleClick() {
 }
 
 target.addEventListener("click", handleClick);
+*/
+
+// Exercise: Web page content update
+// Try this code yourself by pointing your browser to the 'example.com' website
+// Run the code below in the console.
+
+let h1 = document.createElement("h1");
+h1.innerText = "Type into the input to make this text change";
+
+let input = document.createElement("input");
+input.setAttribute("type", "text");
+
+document.body.innerText = "";
+document.body.appendChild(h1);
+document.body.appendChild(input);
+
+input.addEventListener("change", function () {
+  h1.innerText = input.value;
+});

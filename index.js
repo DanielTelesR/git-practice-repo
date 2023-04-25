@@ -1372,3 +1372,14 @@ expect(concatStrings("abc", "def")).toBe("abcdef");
 /*
 Reg-green-refactor cycle: As you continue to refine your code in response to red tests, it becomes a cyclical activity. This is often described as the red-green-refactor cycle. This cycle is the basis of the test-driven development or TDD approach to programming.
 */
+
+// Types of testing:
+
+// e2e testing: it tries to imitate how a user might interact with your app (from the perspective of the end user).
+
+// integration testing: it tests how separate parts of your apps work together.
+
+/* Unit testing: the process of testing the smallest units of your source code in isolation. (highest speed and lowest costs)
+
+Unit is the smallest piece of code that you can test separately from the rest of the app.
+*/

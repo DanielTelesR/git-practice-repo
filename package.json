@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "git-practice-repo",
+  "description": "Practice account for learning Git and practing what I've learned in the \"Programming with JavaScript\" course, provided by Meta.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

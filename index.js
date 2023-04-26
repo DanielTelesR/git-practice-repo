@@ -1383,3 +1383,8 @@ Reg-green-refactor cycle: As you continue to refine your code in response to red
 
 Unit is the smallest piece of code that you can test separately from the rest of the app.
 */
+
+// *** Introduction to Jest (framework) ***
+// Check the video: 'writing tests with jest'.
+// Check the 'addFive.test.js' file.
+// Run the test using 'npm run test'.

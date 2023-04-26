@@ -1415,7 +1415,7 @@ const tax = 1.2;
 
 // Implement getPrices()
 function getPrices(taxBoolean) {
-  for (i = 0; i < dishData.length; i++) {
+  for (let i = 0; i < dishData.length; i++) {
     let finalPrice;
     if (taxBoolean == true) {
       finalPrice = dishData[i].price * tax;
@@ -1425,14 +1425,14 @@ function getPrices(taxBoolean) {
       console.log("You need to pass a boolean to the getPrices call!");
       return;
     }
-    console.log(`Dish: ${dishData[i].name} Price: $ ${finalPrice}`);
+    console.log(`Dish: ${dishData[i].name} Price: $${finalPrice}`);
   }
 }
 
 // Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
-  getPrices(taxBoolean);
-  if (typeof guests == "number" && 0 < guests < 30) {
+  const prices = getPrices(taxBoolean);
+  if (typeof guests == "number" && guests > 0 && guests < 30) {
     let discount = 0;
     if (guests < 5) {
       discount = 5;

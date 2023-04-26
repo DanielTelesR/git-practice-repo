@@ -1433,6 +1433,7 @@ function getPrices(taxBoolean) {
 function getDiscount(taxBoolean, guests) {
   const prices = getPrices(taxBoolean);
   if (typeof guests == "number" && guests > 0 && guests < 30) {
+    // the previous '0 < guests < 30' is not a valid comparison in JavaScript, which resulted in error.
     let discount = 0;
     if (guests < 5) {
       discount = 5;

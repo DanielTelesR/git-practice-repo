@@ -1359,12 +1359,13 @@ npm i @angular/core
 
 // Example: JEST framework
 
+/*
 function concatStrings(str1, str2) {
   return str1 + str2;
 }
 
 expect(concatStrings("abc", "def")).toBe("abcdef");
-
+*/
 // When tests fail, you say that they're red, and when they pass you say that they're green.
 
 // Refactoring: updating code, without affecting the results it produces.
@@ -1393,6 +1394,7 @@ Unit is the smallest piece of code that you can test separately from the rest of
 // Little Lemon Receipt Maker
 
 // Given variables
+/*
 const dishData = [
   {
     name: "Italian pasta",
@@ -1441,6 +1443,69 @@ function getDiscount(taxBoolean, guests) {
       discount = 10;
     }
     console.log("Discount is: $" + discount);
+  } else {
+    console.log("The second argument must be a number between 0 and 30");
+  }
+}
+
+// Call getDiscount()
+getDiscount(true, 2);
+getDiscount(false, 10);
+*/
+
+const dishData = [
+  {
+    name: "Italian pasta",
+    price: 9.55,
+  },
+  {
+    name: "Rice with veggies",
+    price: 8.65,
+  },
+  {
+    name: "Chicken with potatoes",
+    price: 15.55,
+  },
+  {
+    name: "Vegetarian Pizza",
+    price: 6.45,
+  },
+];
+const tax = 1.2;
+
+// Implement getPrices()
+function getPrices(taxBoolean) {
+  const prices = [];
+  for (let i = 0; i < dishData.length; i++) {
+    let finalPrice;
+    if (taxBoolean === true) {
+      finalPrice = dishData[i].price * tax;
+    } else if (taxBoolean === false) {
+      finalPrice = dishData[i].price;
+    } else {
+      console.log("You need to pass a boolean to the getPrices call!");
+      return;
+    }
+    prices.push(finalPrice);
+  }
+  return prices;
+}
+
+// Implement getDiscount()
+function getDiscount(taxBoolean, guests) {
+  const prices = getPrices(taxBoolean);
+  if (typeof guests === "number" && guests > 0 && guests < 30) {
+    let discount = 0;
+    if (guests < 5) {
+      discount = 5;
+    } else if (guests >= 5) {
+      discount = 10;
+    }
+    const totalDiscount = prices.reduce(
+      (acc, price) => acc + (price * discount) / 100,
+      0
+    );
+    console.log("Discount is: $" + totalDiscount.toFixed(2));
   } else {
     console.log("The second argument must be a number between 0 and 30");
   }

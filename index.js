@@ -535,7 +535,7 @@ gol.useWorn();
 // *** Constructors ***
 
 /*
- Important: If you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.
+ Important: If you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it's not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.
 */
 
 // When building objects of the following built-in types, we can use the constructor(the list below is inconclusive):

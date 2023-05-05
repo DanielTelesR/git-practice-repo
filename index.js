@@ -535,7 +535,7 @@ gol.useWorn();
 // *** Constructors ***
 
 /*
- Important: If you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.
+ Important: If you compare new String('plum') === new String('plum'), you'll get back false, while "plum" === "plum" returns true. You're getting the false when comparing objects because it's not the values that you pass to the constructor that are being compared, but rather the memory location where objects are saved.
 */
 
 // When building objects of the following built-in types, we can use the constructor(the list below is inconclusive):
@@ -1359,12 +1359,13 @@ npm i @angular/core
 
 // Example: JEST framework
 
+/*
 function concatStrings(str1, str2) {
   return str1 + str2;
 }
 
 expect(concatStrings("abc", "def")).toBe("abcdef");
-
+*/
 // When tests fail, you say that they're red, and when they pass you say that they're green.
 
 // Refactoring: updating code, without affecting the results it produces.
@@ -1393,6 +1394,7 @@ Unit is the smallest piece of code that you can test separately from the rest of
 // Little Lemon Receipt Maker
 
 // Given variables
+
 const dishData = [
   {
     name: "Italian pasta",

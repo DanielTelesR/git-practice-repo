@@ -45,7 +45,7 @@ main {
 
 main h1 {
   color: brown;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 form {
@@ -82,3 +82,12 @@ form fieldset {
 main button {
     margin-top: 10px;
 }
+
+video {
+  margin-bottom: 15px;
+}
+
+audio {
+  margin-top: 20px;
+}
+

@@ -22,30 +22,37 @@
       <h1>Book a table</h1>
       <form action="" method="post">
         <!-- Fieldset groups radio buttons -->
-        <fieldset id="size">
-          <label>
-            <input type="radio" value="2" name="size" /> 2-person table
-          </label>
-          <label>
-            <input type="radio" value="4" name="size" checked /> 4-person table
-          </label>
-          <label>
-            <input type="radio" value="6" name="size" /> 6-person table
-          </label>
-        </fieldset>
-        <fieldset id="location">
-          <label>
-            <input
-              type="radio"
-              value="indoors"
-              name="location"
-              checked
-            />Indoors
-          </label>
-          <label>
-            <input type="radio" value="outdoors" name="location" />Outdoors
-          </label>
-        </fieldset>
+        <div>
+          <label for="booking_date">Booking Date</label>
+          <input type="date" name="booking_date" id="booking_date" />
+        </div>
+        <div>
+          <label for="booking_people">Numbe of People</label>
+          <!-- Oniput (JS code): updates the output value with the value of the slider when it changes -->
+          <input
+            type="range"
+            name="booking_people"
+            id="booking_people"
+            min="1"
+            max="10"
+            value="4"
+            oninput="this.nextElementSibling.value = this.value"
+          />
+          <output>4</output>
+        </div>
+        <div>
+          <label for="booking_location">Location</label>
+          <input
+            id="booking_location"
+            name="booking_location"
+            list="locations"
+          />
+          <datalist id="locations">
+            <option value="Downtown"></option>
+            <option value="Uptown"></option>
+          </datalist>
+        </div>
+        <div></div>
         <button type="submit">Book table</button>
       </form>
     </main>

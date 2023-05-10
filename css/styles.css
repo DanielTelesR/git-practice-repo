@@ -48,6 +48,11 @@ main h1 {
   margin-bottom: 15px;
 }
 
+main h2 {
+  margin: 15px 0;
+  font-size: 1.3rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -91,3 +96,7 @@ audio {
   margin-top: 20px;
 }
 
+iframe {
+  background-color: #fff;
+  margin: 10px 0;
+}

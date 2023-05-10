@@ -4,50 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bare Bone Layout</title>
-    <!-- Meta tags for SEO (Search Engine Optimization) -->
-    <meta name="description" content="Daniel Teles' web page" />
-    <meta name="title" content="Semantic HTML" />
-    <meta name="author" content="Daniel Teles" />
-    <meta name="language" content="english" />
-    <meta name="robots" content="index, follow" />
-    <meta name="rating" content="safe for kids" />
-    <meta name="copyright" content="Copyright 2023" />
-
-    <!-- Open Graph Protocol - for sharing the website on social media -->
-
-    <!-- Frontend developers use the Open Graph Protocol to improve the user experience of shared links because it helps social media platforms create a preview of the shared web page. -->
-
-    <meta property="og:title" content="A brief description" />
+    <title>Little Lemon</title>
+    <!-- Social Media Card -->
+    <meta property="og:title" content="Our Menu" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.mysite" />
-    <meta property="og:description" content="A brief description" />
-    <meta property="og:image" content="image.png" />
-
-    <!-- Links -->
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <!-- Include your CSS files here - last section of the head element -->
-    <link rel="stylesheet" href="file.css" />
+    <meta property="og:imge" content="logo.png" />
+    <meta property="og:url" content="https://littlelemon" />
+    <meta
+      property="og:description"
+      content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Little Lemon" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <!-- Add your website name or logo here -->
+      <img src="logo.png" alt="" />
     </header>
     <nav>
-      <!-- Add your main content here -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
     </nav>
     <main>
-      <!-- Add your main content here -->
-      <h1>Heading</h1>
+      <h1>Blog</h1>
+      <article>
+        <h2>20% off this weekend</h2>
+        <p>Come down to Little Lemon and your meal will be 20% off!</p>
+      </article>
+      <article>
+        <h2>Our new menu</h2>
+        <p>We've updated our menu with new dinners!</p>
+      </article>
     </main>
     <footer>
-      <!-- Add copyright notices and other footer content here -->
-      <p>Footer</p>
+      <p>Copyright Little Lemon</p>
     </footer>
-    <!-- Include your Javascript files here -->
-    <script src="js/file.js"></script>
   </body>
 </html>

@@ -1392,7 +1392,7 @@ Unit is the smallest piece of code that you can test separately from the rest of
 
 // *** Final Graded Assessment ***
 // Little Lemon Receipt Maker
-
+/*
 // Given variables
 
 const dishData = [
@@ -1451,3 +1451,4 @@ function getDiscount(taxBoolean, guests) {
 // Call getDiscount()
 getDiscount(true, 2);
 getDiscount(false, 10);
+*/

@@ -1452,3 +1452,14 @@ function getDiscount(taxBoolean, guests) {
 getDiscount(true, 2);
 getDiscount(false, 10);
 */
+
+// Practicing JS - Some code snippets
+const prompt = require("prompt-sync")();
+var tweet = prompt("Write your tweet: ");
+var tweetCount = tweet.length;
+alert(
+  "You have writen " +
+    tweetCount +
+    "characters," +
+    ` you have 140 - ${tweetCount} left`
+);
